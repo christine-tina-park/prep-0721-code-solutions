@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Films by Park Chan Wook</h1>
+  <div class="row">
+    <div class="column">
+      <img src="https://alternativemovieposters.com/wp-content/uploads/2019/02/kostis_oldboy.jpg">
+      <h3>Old Boy (2005)</h3>
+      <p>Dae-Su is an obnoxious drunk bailed from the police station yet again by a friend. However, he's abducted from the
+      street and wakes up in a cell, where he remains for the next 15 years, drugged unconscious when human contact is
+      unavoidable, otherwise with only the television as company. And then, suddenly released, he is invited to track down his
+      jailor with a denouement that is simply stunning.</p>
+    </div>
+    <div class="column">
+      <img src="https://images.chosun.com/resizer/2OozlknnW1oBurp1r0fJQAvPOP0=/464x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/P2CJ5TBMA4CKWXCQU5WUXRL5HI.jpg">
+      <h3>Lady Vengeance (2006)</h3>
+      <p>Lee Geum-ja (Lee Young-ae) has spent the last 13 years in prison for a murder she didn't commit. She's fantasized about
+      getting revenge on the various people who wronged her, including the police officer (Nam Il-u) who forced her to confess
+      and a shady teacher (Choi Min-sik) with whom she has a checkered past. After her release, she teams up with a group of
+      eccentric friends she made while behind bars and sets out to clear her name and find the daughter she was forced to
+      leave behind.</p>
+    </div>
+    <div class="column">
+      <img src="http://pds25.egloos.com/pds/201605/02/74/d0014374_57270c173edd6.jpg">
+      <h3>The Handmaiden (2016)</h3>
+      <p>With help from an orphaned pickpocket (Kim Tae-ri), a Korean con man (Ha Jung-woo) devises an elaborate plot to seduce
+      and bilk a Japanese woman (Kim Min-hee) out of her inheritance.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
